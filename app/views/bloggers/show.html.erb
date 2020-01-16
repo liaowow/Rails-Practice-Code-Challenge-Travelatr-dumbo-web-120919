@@ -1,0 +1,9 @@
+<h1>Blogger Show Page</h1>
+<h3>Name: <%= @blogger.name %> </h3>
+
+<h3>Total Likes on <%= @blogger.name %>'s posts: <%= @total %></h3>
+
+<h3>Feature Post: </h3>
+<h3> <%= link_to @feature_post.title, post_path(@feature_post) %></h3>
+
+<h3>Top 5 Destinations: </h3>

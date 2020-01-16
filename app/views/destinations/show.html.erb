@@ -1,0 +1,10 @@
+<h1>Destination Profile Page</h1>
+<h3>Name: <%= @destination.name %> </h3>
+<h3>Country: <%= @destination.country %> </h3>
+
+<h3>Most Recent 5 Posts: </h3>
+<% @most_recent.each do |post| %> 
+    <p> <%= link_to post.title, post_path(post) %> </p>
+<% end %>
+
+<h3>Average Age of All Bloggers for this Destination: <%= @avg_age %> </h3>
